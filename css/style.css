@@ -655,8 +655,9 @@ section.reviews {
 
 
 div.topSecImage {
-  background: url("../images/bunbackgroundtop.png");
   background-color: white;
+  background: url("../images/bunbackgroundtop.png");
+
 }
 
   section.foodPictures  {
