@@ -1,0 +1,820 @@
+/* Box Model Hack */
+* {
+  box-sizing: border-box;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+
+body {
+  font-family: 'Playfair Display', arial
+}
+
+
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+html { font-size: 62.5%;
+}
+
+header {
+ 
+  width: 100%;
+  height: 80px; 
+  font-size: 3rem;
+  margin-top: 30px; 
+
+ }
+
+    header ul {
+     
+   
+      text-align: right;   /*text-align: right;  moved lis to the right */
+      width:100%;   
+          
+
+    }
+    
+       header li {
+      
+          display: inline-block;          
+          margin: 12px 20px 0 20px; 
+          color: black;
+          font-weight: 500;
+        
+          
+       
+                     
+        }
+        /*#########  welcome section  #######*/
+
+section.welcome {  
+  width: 100%;
+  height: 800px;
+  padding: 10%;
+ 
+
+
+}
+   
+
+     .welcomeBox {
+       
+     border-radius: 60px;    
+       width: 800px;           
+      height: 100%;   
+      
+     
+      }
+
+
+          .welcome h1 {
+            font-size: 7.5rem;  
+            padding-left: 50px;
+            color:black;
+            font-weight:400;
+            
+            
+          }
+
+  
+
+
+
+     .buttonIn {
+      
+      width: 600px;
+      position: relative;
+      margin-left: 40px; /* margin has to be set up here, to move both the input and button */
+      margin-top: 20px; /*moves search bar and button away from welcome text, padding can't be used or it'll only move the input not the button*/
+      margin-bottom: 40px;
+      
+  }
+
+    
+    
+  input {
+      padding: 0px;
+      width: 100%; /*100% of the .buttonIn width */
+      border: none; /*removes the grey border */
+      height: 40px;  /* same as button */
+      border-radius: 5px;
+      font-size: 2rem;  /* changes font size, must be here not in div container .buttonIn */     
+      border-radius: 20px;      
+      font-weight: 500; /* makes placeholder bold */
+      text-indent: 30px; /*puts indent to left of placeholder */
+      color: black;
+      box-shadow: 10px 20px 20px rgba(225, 117, 2, 0.4);
+     
+     
+  }
+
+  .buttonTop {
+    
+      position: absolute;
+      font-size: 2rem;   /* changes font size, must be here not in div container .buttonIn */
+      padding: 4px 150px 4px 60px;    
+      top: 0;
+      border-radius: 20px;
+      right: 0px; /* keeps it to the right of the input */
+      z-index: 2;  /*???? */
+      border: none; /*removes the grey border */      
+      height: 40px;  /* same as button */
+      cursor: pointer; /*turns curser into pointer;*/
+      color: white;  /* changes text white*/
+      background-color:  rgb(240, 160, 31)	; /* making color more mellow */
+
+      font-weight: 500;
+      transform: translateX(2px);
+  }
+
+  button.buttonTop:hover {
+    color: black;
+
+  }
+  .welcome ul {  /* social media numbers and images */
+    font-size: 3rem;  /* font size has to be adjusted here, if its put in li the text bleeds into eachother */
+    color: orange;
+    
+   
+    
+  }
+    
+       .welcome li {  /* social media numbers  */
+         margin-right: 120px;   
+         margin-top: 35px;   /* puts space between search bar and social media icons */
+        display: inline-block; 
+        /*-webkit-text-stroke: 1px rgb(77, 55, 1); */
+        font-weight: 900;         
+       
+       }
+
+       .welcome img { /* social media images */
+         height: 45px;
+       }
+
+
+       .socialmedialogos:hover {
+        color:black;
+       }
+section.discover { 
+  width: 100%;
+  height: 1000px;
+  font-size: 3rem;  
+  border: 2px solid rgba(0, 0, 0,.0);
+  background-image: url("/design.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+section.discover p{
+ font-size: 2.5rem; 
+}
+
+
+
+.discoverTextBox {
+ 
+  background:rgba(245, 244, 240, 0.7); 
+  position: absolute;
+  margin: 10% 15% 5% 40%;
+  height: auto;
+  color: black;
+  padding-left: 20px; /* padding to the left of textbox */
+  padding-top: 30px;
+  padding-bottom: 30px;
+  
+  
+}   
+
+
+.discoversecondparagraph {
+  padding-top: 10px;
+}
+.discoverTextBox .sectionName {
+  color: black; 
+}
+
+     .discover h4, .regularText {  /* puts spacing between discover our story and about us, space above paragraph*/
+       margin-top: 10px;
+       
+     }
+
+   #discoverButton {
+      display: inline-block;
+      color: white;
+      font-size: 2rem;
+      background-color: rgb(240, 160, 31);
+      margin-top: 22px;
+      padding: 7px;
+      border-radius: 5px;
+      border: none; /* removes grey from button */
+      
+    }
+
+    #discoverButton:hover{
+      color: black;
+     }
+
+                   /* speciality section */
+
+section.specialty-Cuisine {
+/*  border: 2px solid rgb(128, 0, 0); */
+  width: 100%;
+  height: 100%; /* makes background responsive to size change */
+  text-align: center;
+ padding-top: 80px;
+ 
+  background: rgb(237, 237, 237);
+  background-image: url(/vector-seamless-restaurant-menu-pattern-background.jpg)
+  
+}
+
+    
+
+      section.specialty-Cuisine li {
+        display: inline-block;
+        font-size: 2rem;
+        margin-left: 20px;
+
+      }
+
+      section.specialty-Cuisine a:hover, #hamitems a:hover{
+        color:orange;
+      }
+
+      .foodPictures {
+        margin: 40px 250px 40px 250px;
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        column-gap: 25px;
+        row-gap: 25px;
+      
+
+      }
+      
+          .foodPictures section {
+            
+            font-size: 3rem;                
+            height: 320px;
+          } 
+
+     
+          .foodPictures span {
+            display: inline-block; /* inline elements need display changed AND need a width for text-align to work */
+            width: 200px;
+            text-align: center;
+            margin-bottom: 20px; /*put space under food name */
+          }
+          .menuButton {
+            position: static; 
+            font-weight: 700;          
+            background: rgb(240, 160, 31);
+            padding: 10px 20px;
+            border-radius: 20px;
+            font-size: 2rem;
+            color: white;             
+           }
+          
+     
+
+           /* TABLES for menu*/
+
+section.menutext {
+  padding-top:50px;
+  width: 100%;
+  height: auto;
+ display: flex;
+  flex-direction: column;
+        column-gap: 25px;
+        row-gap: 25px;
+  font-size: 2rem;
+  background-image: url(/menu-background-tile.png)
+}
+
+table {
+  width: auto;
+  margin: 20px 0px;
+  color: rgb(0, 36, 0);
+}
+
+caption {
+  font-size: 3rem;
+  font-weight: 700;
+  margin: 20px 0px;
+  color: orange;
+  border-bottom: 2px dotted orange;
+}
+
+th {
+  font-size: 2rem;
+  font-weight: 700;
+ 
+}
+
+td {
+  border-bottom: 1px solid orange;
+  padding: 10px 15px;
+}
+
+.cartbutton:hover {
+  color:orange;
+} 
+
+section.hours {
+  
+  width: 100%;
+  height: 1000px;
+  padding: 40px 200px;
+  text-align: center;
+  font-size: 2rem;
+  background: url("https://cdn.glitch.global/3252c516-8b89-4786-963b-8fd3c2b8b877/faded-cups-bkgrd.jpg?v=1650331345796");
+  background-repeat: no-repeat;
+  background-size: cover;
+  
+}
+      section.hours h2 {   /* opening hours */
+           margin-bottom: 30px;       
+      }
+
+     .callNow {
+       color: rgb(240, 160, 31);
+       display: block;
+     }
+
+      .hours h3.coloredText {  /* phone number */
+        font-size: 3.8 rem;
+        margin-bottom: 25px;
+      }
+
+      .CallNow{
+        display: block;
+        margin-bottom: 20px;
+        
+      }
+
+      section.weekdayhours, 
+      section.weekdayendHours {
+       
+        float: left;       
+        font-weight: 600;
+        width: 50%;  /*pushes iframe down */
+       
+      }
+     
+
+      section.weekdayhours h4, 
+      section.weekdayendHours h4 {
+        
+        margin-bottom: 5px;
+
+      }
+
+     .weekdayendHours  {
+        float: right;       
+       
+     }
+     
+     .teacuprabbit {      
+      
+      width: 100%;        
+      margin: auto;
+      overflow: auto;
+      padding-top: 50px;
+      display: flex;
+      justify-content: center;
+     }
+
+     .teacuprabbit img {
+      max-width: 70%;
+      
+      
+     }
+   
+  
+ 
+     
+
+section.reviews {
+   padding: 10% 30% 10% 30%;
+  width: 100%;
+  height: 800px;
+  background: rgb(201, 239, 163);
+  background-image: url(/bunny.jpg);
+  background-repeat: none;
+  background-size: cover;
+  
+ 
+}
+
+section.reviews * {
+  display: block;
+  text-align: center;
+  
+
+}
+
+section.reviews h5, section.reviews span.titles {
+  padding-bottom: 20px;
+
+}
+
+section.reviews h6, section.reviews span {
+font-size: 2rem;
+padding: 4px;
+}
+
+.titles {                 /* formatting for all title text except 1st page */
+  font-size: 6rem;
+  font-weight: 600;
+}
+
+.regularText {
+  font-size: 3rem;
+}
+
+.sectionName {         /*for all the top section names "book table, about us ect" */
+  font-size: 3.1rem;
+  color: rgb(240, 160, 31);
+  font-weight: 700;
+}
+
+
+#hamnav label, #hamburger { /* gets rid of hamburger */
+  display: none;
+}
+
+a { /* gets rid of hyperlink styling*/
+  text-decoration: none;
+  color: black;
+}
+
+/******************************************
+/* ADDITIONAL STYLES (images)
+/*******************************************/
+
+.cart img {
+  width: auto;
+  height: 35px;
+  
+}
+
+img.rabbitfrontpage{
+  display: none;
+}
+.food {
+  width: 100%; /* make food images stay inside area */
+  height: 100%;
+
+}
+.search img {
+  width: auto;
+  height: 35px;
+}
+
+div.topSecImage {
+  background: url("/title.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  border: 2px solid rgba(0, 0, 0, 0.0) /* hidden border needed so it covers the whole div, for some reason if the border isn't there it won't cover the whole div? */
+
+}
+
+header .logo {
+  float: left;
+  height: 75px;
+  margin: 0 0 0 80px;
+}
+
+.phone {
+  height: 80px;  
+}
+
+.reviewimages{
+border-radius: 60px;
+height: 100px;
+display: block;               /* three things allowed the image to be centered, display block, margin auto left and right */
+margin: 0 auto;
+}
+
+.lastStars {
+  display: block;   /* three things allowed the image to be centered, display block, margin auto left and right */
+  margin: 0 auto;
+}
+
+.stars {
+  height:40px;
+  width: 150px;
+}
+
+/* having image text appear on image when it is hovered over */
+
+.img__wrap {
+  position: relative;
+  max-height: 300px;
+  max-width: 300px;
+  
+}
+
+.img__description_layer {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(36, 62, 206, 0.6);
+  color: #fff;
+  visibility: hidden;
+  opacity: 0;  
+  text-align: center;
+  padding-top: 40px;
+
+
+}
+
+.img__wrap:hover .img__description_layer {
+  visibility: visible;
+  opacity: 1;
+}
+
+
+
+.img__description {
+  transition: .2s;
+  transform: translateY(1em);
+}
+
+.img__wrap:hover .img__description {
+  transform: translateY(0);
+}
+
+
+
+
+@media screen and (max-width: 1314px) {
+
+header li {
+  margin: 0%;
+  text-align: left;
+  padding: 1%;
+  font-size: 2rem;
+}
+.welcomeBox {
+  width: 100%;
+  height: 60%;
+  
+}
+
+.welcome h1 {
+  font-size: 6rem;
+}
+.foodPictures{ /* #################*/
+  margin: 0px;
+}
+
+.welcome li {
+  margin: 2%;
+  font-size: 3rem;
+}
+
+.welcome img {
+  height: 20px;
+  padding: 0%;
+}
+input {
+  width: 70%;
+  display: inline;
+ }
+
+.buttonTop {
+  display: inline;
+  width: 35%;
+   padding: 4px 80px 4px 60px; 
+   text-align: center;
+ 
+  
+}
+
+.buttonIn {
+  width: 100%;
+  margin-left: 0%;
+  
+
+}
+
+.discoverTextBox {
+ 
+    position: relative;
+ 
+   
+    margin: 5% 5% 5% 0%;
+    
+}
+
+section.hours {
+  padding: 0%;
+}
+iframe {
+  max-width: 90vw; /* force iframe/video to fit within 90% of width of viewport*/
+}
+
+section.reviews {
+  padding: 0%;
+}
+}
+
+@media screen and (max-width:800px) {
+  section.foodPictures section {
+    
+    margin-left: 5%;
+    font-size: 2.3rem;
+    margin-right: 0%;
+   
+  }
+
+
+div.topSecImage {
+  background: url("/bunbackgroundtop.png");
+}
+
+  section.foodPictures  {
+    grid-template-columns: repeat(2,1fr);
+    column-gap: 0px;
+    row-gap: 3px;
+  }
+}
+
+
+
+@media screen and (max-width: 900px){
+  /* (A) BREAK INTO VERTICAL MENU */
+  #hamitems li {
+    box-sizing: border-box;     
+    display: block;
+    width: 100%;
+    border-top: 1px solid #333;
+    text-align: center;
+   
+  
+  }
+
+  header {
+    height: 100%;
+  }
+
+  
+/* (B) SHOW HAMBURGER ICON */
+#hamnav label { 
+display: inline-block; 
+color: black;
+font-style: normal;
+font-size: 1.5em;
+padding: 10px;
+
+
+}
+
+.logo {
+  display: none;
+}
+
+/* (C) TOGGLE SHOW/HIDE MENU */
+#hamitems { display: none; }
+#hamnav input:checked ~ #hamitems { display: block;
+margin-bottom: 50px; }
+
+}
+
+
+
+
+/* CAROSUEL REVIEW */
+    .carrousel {
+      background: #ffffff;
+      text-align: center;
+      padding: 4em 0;
+      height: auto;
+      max-width: 750px;
+      
+      position: relative;
+      overflow: hidden;
+      margin: 0;
+    }
+    .carrousel h2 {
+      margin: 0;
+      margin-top: -1.7em;
+      padding: 0;
+      font-size: 1em;
+      text-align: center;
+      color: #bbbbbb;
+    }
+    .carrousel .slides {
+      width: 400%;
+      left: 0;
+      padding-left: 0;
+      padding-top: 1em;
+      overflow: hidden;
+      list-style: none;
+      position: relative;
+   
+     
+      -webkit-transition: transform .5s;
+      -moz-transition: transform .5s;
+      -o-transition: transform .5s;
+      transition: transform .5s;
+    }
+    .carrousel .slides li {
+      width: 25%;
+      position: relative;
+      float: left;
+    }
+    .carrousel li p{
+      margin-top: 0;  
+    }
+    .carrousel li q {
+      max-width: 90%;
+      margin: auto;
+      color: #666666;
+      font-size: 1.3em;
+      font-weight: bold;
+    }
+        .carrousel li span.author {
+      margin-top:0.5em;
+      font-size: 1.2em;
+      color: #777777;
+      display: block;
+    }
+    
+    /* sliding functionality */
+    .carrousel .slidesNavigation {
+      display: block;
+      list-style: none;
+      text-align: center;
+      bottom: 1em;
+      /*--- Centering trick---*/
+        /* Absolute positioning*/
+        position: absolute; 
+        /* Abosulte positioning*/
+        width: 104px; /*This width  is the addition of the width of all the navigations dots - So in this case is   104 because the navigation dots are 26px (width:10px and 6px marginleft + 6 px marginright) and there are 4 dots so 4x26=104 */
+        left: 50%; /*Centering de element*/
+        margin-left: -52px; /*adjusting the centering by applying a negative margin of half of the width*/
+    }
+    .carrousel input {
+      display: none;
+    }
+    .carrousel .slidesNavigation label {
+      float: left;
+      margin: 6px;
+      display: block;
+      height: 10px;
+      width: 10px;
+      -webkit-border-radius: 50%;
+      border-radius: 50%;
+      border: solid 2px #2980b9;
+      font-size: 0;
+    }
+    /* You have to repeat this with each slide
+    TODO: make it easier with SCSS
+    25% movement 100/slides-num
+    */
+    #radio-1:checked ~ .slides {
+      transform: translateX(0%);
+    }
+    #radio-2:checked ~ .slides {
+      transform: translateX(-25%);
+    }
+    #radio-3:checked ~ .slides {
+      transform: translateX(-50%);
+    }
+    #radio-4:checked ~ .slides {
+      transform: translateX(-75%);
+    }
+     
+     
+    .carrousel .slidesNavigation label:hover {
+       cursor: pointer;
+    }
+    /* You have to repeat this with each slide/dot */
+    .carrousel #radio-1:checked ~ .slidesNavigation label#dotForRadio-1,
+    .carrousel #radio-2:checked ~ .slidesNavigation label#dotForRadio-2,
+    .carrousel #radio-3:checked ~ .slidesNavigation label#dotForRadio-3,
+    .carrousel #radio-4:checked ~ .slidesNavigation label#dotForRadio-4 {
+      background: #2980b9;
+    }
