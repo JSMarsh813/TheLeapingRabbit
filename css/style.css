@@ -179,7 +179,8 @@ section.discover {
   height: 1000px;
   font-size: 3rem;  
   border: 2px solid rgba(0, 0, 0,.0);
-  background-image: url("../images/design.jpg");
+  background: rgb(227, 184, 114);
+  background-image: url("../images/design.jpg"); 
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -243,7 +244,8 @@ section.specialty-Cuisine {
  padding-top: 80px;
  
   background: rgb(237, 237, 237);
-  background-image: url("../images/vector-seamless-restaurant-menu-pattern-background.jpg")
+  background-image: url("../images/vector-seamless-restaurant-menu-pattern-background.jpg");
+  
   
 }
 
@@ -306,7 +308,9 @@ section.menutext {
         column-gap: 25px;
         row-gap: 25px;
   font-size: 2rem;
-  background-image: url("../images/menu-background-tile.png")
+  background:rgb(235, 251, 235);
+  background-image: url("../images/menu-background-tile.png");
+
 }
 
 table {
@@ -651,7 +655,8 @@ section.reviews {
 
 
 div.topSecImage {
-  background: url("/bunbackgroundtop.png");
+  background: url("../images/bunbackgroundtop.png");
+  background-color: white;
 }
 
   section.foodPictures  {
