@@ -490,7 +490,7 @@ img.rabbitfrontpage{
 }
 
 div.topSecImage {
-  background: url("/images/title.jpg");
+  background: url("../images/title.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   border: 2px solid rgba(0, 0, 0, 0.0) /* hidden border needed so it covers the whole div, for some reason if the border isn't there it won't cover the whole div? */
