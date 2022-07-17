@@ -432,6 +432,8 @@ section.reviews {
  
 }
 
+
+
 section.reviews * {
   display: block;
   text-align: center;
@@ -730,7 +732,7 @@ margin-bottom: 50px; }
       
       position: relative;
       overflow: hidden;
-      margin: 0;
+      margin: 0 auto;
     }
     .carrousel h2 {
       margin: 0;
