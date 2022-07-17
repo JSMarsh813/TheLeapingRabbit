@@ -314,7 +314,8 @@ section.menutext {
 }
 
 table {
-  width: auto;
+  table-layout: fixed; /* table layout and width fixed an issue where the add cart button got pushed off screen, it was width auto before https://stackoverflow.com/questions/7922928/html-as-table-gets-narrower-text-overflow-should-cut-off-more-and-more-text*/
+   width: 100%;
   margin: 20px 0px;
   color: rgb(0, 36, 0);
 }
@@ -336,7 +337,10 @@ th {
 td {
   border-bottom: 1px solid orange;
   padding: 10px 15px;
+  text-align: center
+  
 }
+
 
 .cartbutton:hover {
   color:orange;
@@ -528,6 +532,9 @@ margin: 0 auto;
   width: 150px;
 }
 
+.shopifyButton {
+  padding: 1px;
+}
 /* having image text appear on image when it is hovered over */
 
 .img__wrap {
@@ -708,7 +715,9 @@ margin-bottom: 50px; }
 
 }
 
-
+#product-component-1657522267168 {
+  margin: 2px solid green;
+}
 
 
 /* CAROSUEL REVIEW */
@@ -824,3 +833,12 @@ margin-bottom: 50px; }
     .carrousel #radio-4:checked ~ .slidesNavigation label#dotForRadio-4 {
       background: #2980b9;
     }
+
+ @media screen and (max-width: 1000px){
+  td {  
+    padding: 0px 0px;
+    font-size: 1.7rem;
+    
+  }
+ 
+ }
