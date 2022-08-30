@@ -1,14 +1,18 @@
+https://user-images.githubusercontent.com/101692334/187533443-14a260e0-b51f-4846-a3e9-f4f50773aeed.mp4
 
+Showing Responsiveness:
+
+https://user-images.githubusercontent.com/101692334/187533611-3b587a24-748b-445a-930a-bdc52856846e.mp4
 
 ##  How It's Made:
 Tech: CSS, JavaScript, HTML
 
 ## Optimizations
 
-To keep the formatting tidy, I created a seperate javascript file purely for the shopify links. 
+To keep the code tidy, I created a seperate javascript file purely for the shopify links. 
 
 ## Future Optimizations
-The shopify's buy button works by giving the cart button a specific id which is linked to the javaScript code, which is generated from and copied from Shopify.
+The shopify buy button works by giving the cart button a specific id which is linked to the javaScript code, which is generated from and copied from Shopify.
 
 Image of HTML:
 
